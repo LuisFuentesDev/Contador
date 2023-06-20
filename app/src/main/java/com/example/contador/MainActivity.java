@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
             counter.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                   int numero = Integer.getInteger(textView.getText().toString());
+                   Integer numero = Integer.parseInt(textView.getText().toString());
                    numero++;
-                   textView.setText(numero);
+                   textView.setText(numero.toString());
                 }
             });
         }
